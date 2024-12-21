@@ -18,7 +18,9 @@ section {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Uncial Antiqua", serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -28,7 +30,6 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #333;
   padding: 1rem;
   z-index: 10;
   text-align: center;
@@ -41,11 +42,76 @@ header nav a {
   cursor: pointer;
 }
 
-
-
 #welcome {
-  background: #f7e4d4;
+  margin: 0;
+  height: 100vh;
+  background: url('assets/welcomeBackground.png') no-repeat center center; /* Center image */
+  background-size: cover; /* Scale image to cover the screen */
+  text-align: center;
 }
+
+#welcome h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#welcome p {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#wave-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+}
+
+#wave {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 200%;
+  height: 200px;
+  background: transparent;
+  border-top: 3px solid rgba(255, 69, 0, 0.8); /* Fiery orange-red */
+  border-radius: 50%;
+  animation: waveMove 5s linear infinite;
+}
+
+#wave:nth-child(2) {
+  top: 60%;
+  animation-delay: -2s;
+  border-top: 3px solid rgba(255, 140, 0, 0.6); /* Amber-orange */
+}
+
+#wave:nth-child(3) {
+  top: 40%;
+  animation-delay: -3s;
+  border-top: 3px solid rgba(255, 99, 71, 0.7); /* Softer lava tone */
+}
+
+@keyframes waveMove {
+  0% {
+    transform: translateX(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-50%) scaleY(1.2); /* Slight vertical stretch */
+  }
+  100% {
+    transform: translateX(-100%) scaleY(1);
+  }
+}
+
+/* 
+@keyframes wave-gradient-horizontal {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; }
+} */
 
 #interesting {
   background: #e2d4f7;
