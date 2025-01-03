@@ -1,17 +1,17 @@
 // App.tsx
 import React from 'react';
 
+import UserProvider from './contexts/UserProvider';
+
 import Header from './components/Header';
 import Welcome from './components/Welcome';
 import InterestingToDO from './components/InterestingToDo';
 import EventDetails from './components/EventDetails';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import Accommodation from './components/Accommodation';
 
 import './App.css';
-
-import UserProvider from './contexts/UserProvider';
-
 
 const App: React.FC = () => {
 
@@ -21,6 +21,7 @@ const App: React.FC = () => {
         <Header />
         <Welcome />
         <EventDetails />
+        <Accommodation />
         <FAQ />
         <InterestingToDO />
         <Footer />
