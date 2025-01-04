@@ -84,6 +84,45 @@ header nav a {
   height: 50%;
 }
 
+#event-details {
+  background: #9ae3a0;
+  display: flex; /* Enables flexbox */
+  flex-direction: column; /* Stacks content vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  height: 100vh; /* Full viewport height for vertical centering */
+  padding: 20px; /* Optional padding for spacing */
+}
+
+#gridEvent {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto; /* Centers the grid horizontally within the parent */
+  width: 90%; /* Adjusts width to ensure content doesn't overflow */
+  max-width: 1200px; /* Limits maximum width for better layout */
+  gap: 10px; 
+}
+
+.gridEvent-1 {
+  width: 50%;
+}
+
+.event-img {
+  width: 100%; /* Ensures full width within the container */
+  height: auto; /* Adjusts height automatically */
+  object-fit: cover; /* Maintains aspect ratio */
+  border-radius: 10px;
+  margin-bottom: 0; /* Remove unnecessary bottom margin */
+}
+
+.event-img-small {
+  width: 48%; /* Adjusts width for smaller images */
+  height: auto; /* Adjusts height automatically */
+  object-fit: cover; /* Maintains aspect ratio */
+  border-radius: 10px;
+  margin-top: 20px; /* No extra margins */
+}
+
 #wave {
   position: absolute;
   top: 50%;
@@ -131,10 +170,6 @@ header nav a {
   background: #af9bce;
 }
 
-#event-details {
-  background: #85d3b0;
-}
-
 #FAQ {
   background: #cca3a3;
 }
@@ -148,4 +183,24 @@ footer {
 
 #accomodation {
   background: #c89405;
+}
+
+/* Css for mobile here */
+@media (max-width: 768px) {
+  #wave-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  #wave {
+    height: 100px;
+  }
+
+  #gridEvent {
+    flex-direction: column;
+  }
+
+  .gridEvent-1 {
+    width: 100%;
+  }
 }
