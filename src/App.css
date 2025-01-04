@@ -85,7 +85,7 @@ header nav a {
 }
 
 #event-details {
-  background: #9ae3a0;
+  background: #0F9330;
   display: flex; /* Enables flexbox */
   flex-direction: column; /* Stacks content vertically */
   justify-content: center; /* Centers content vertically */
@@ -167,11 +167,20 @@ header nav a {
 } */
 
 #interesting {
-  background: #af9bce;
+  background: #DC6E39;
 }
 
 #FAQ {
-  background: #cca3a3;
+  background: #814230;
+}
+
+#sectionFAQ {
+  align-items: normal;
+  width: 90%;
+}
+
+#FAQ p {
+  font-size: 1.2rem;
 }
 
 footer {
@@ -182,7 +191,7 @@ footer {
 }
 
 #accomodation {
-  background: #c89405;
+  background: #8A9C4A;
 }
 
 /* Css for mobile here */
