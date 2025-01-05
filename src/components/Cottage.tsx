@@ -1,4 +1,5 @@
 import React from 'react';
+import BookingLink from './BookingLink';
 
 const Cottage: React.FC = () => {
   return (
@@ -36,6 +37,9 @@ const Cottage: React.FC = () => {
                 <img src="/img/Cottage2.jpeg" alt="Cottage 2" className="event-img-small" />
             </div>
         </div>
+        </div>
+        <div style={{ textAlign: 'center', marginTop: '30px' }}>
+            <BookingLink />
         </div>
         </div>
     </section>

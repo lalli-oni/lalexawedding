@@ -1,5 +1,6 @@
 // components/Cabin.tsx
 import React from 'react';
+import BookingLink from './BookingLink';
 
 const Cabin: React.FC = () => {
   return (
@@ -39,6 +40,9 @@ const Cabin: React.FC = () => {
                 <img src="/img/cabin4.png" alt="Event Location 5" className="event-img-small" />
             </div>
             </div>
+        </div>
+        <div style={{ textAlign: 'center', marginTop: '30px' }}>
+            <BookingLink />
         </div>
       </div>
     </div>
