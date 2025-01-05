@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import Accommodation from './components/Accommodation';
 import Cabin from './components/Cabin';
 import Guesthouse from './components/Guesthouse';
+import Cottage from './components/Cottage';
 
 import './App.css';
 
@@ -43,6 +44,7 @@ const AppContent: React.FC = () => {
           } />
           <Route path="/cabin" element={<Cabin />} />
           <Route path="/guesthouseRoom" element={<Guesthouse />} />
+          <Route path="/cottage" element={<Cottage />} />
         </Routes>
         <Footer />
       </UserProvider>
