@@ -14,11 +14,15 @@ const Accommodation: React.FC = () => {
       <p>There are a few options, the camping site outside Miðgarður, the venue. Across the road (15min. walking) we also have a a few cabins and guesthouse rooms.</p>
       <p>Please understand that cabins and guesthouse rooms are in scarce supply. So we will have to prioritize based on people travelling from abroad and/or with children.</p>
       <ChooseAccomodation />
-      {userState !== null && userState.preferredLodging === null ? <img src="/sad-drenched.gif" alt="lalli sad you wont be hanging out with us" /> : null}
-      {userState !== null && userState.preferredLodging === 'camping' ? <div>camping content</div> : null}
-      {userState !== null && userState.preferredLodging === 'moar-cabins' ? <div>moar cabins content</div> : null}
-      {userState !== null && userState.preferredLodging === 'moar-room' ? <div>moar room/guesthouse content</div> : null}
-      {userState !== null && userState.preferredLodging === 'other' ? <div>other lodging content</div> : null}
+      {userState !== null && userState.preferredLodging !== undefined ?
+        <div>
+          {userState.preferredLodging === null ? <img src="/sad-drenched.gif" alt="lalli sad you wont be hanging out with us" /> : null}
+          {userState.preferredLodging === 'camping' ? <div>camping content</div> : null}
+          {userState.preferredLodging === 'moar-cabins' ? <div>moar cabins content</div> : null}
+          {userState.preferredLodging === 'moar-room' ? <div>moar room/guesthouse content</div> : null}
+          {userState.preferredLodging === 'other' ? <div>other lodging content</div> : null}
+        </div>
+      : null}
     </section>
   );
 };
