@@ -15,7 +15,7 @@ const Accommodation: React.FC = () => {
       <p>Please understand that cabins and guesthouse rooms are in scarce supply. So we will have to prioritize based on people travelling from abroad and/or with children.</p>
       <ChooseAccomodation />
       {userState !== null && userState.preferredLodging !== undefined ?
-        <div>
+        <div style={{ paddingTop: "1rem" }}>
           {userState.preferredLodging === null ? <img src="/sad-drenched.gif" alt="lalli sad you wont be hanging out with us" /> : null}
           {userState.preferredLodging === 'camping' ? <div>camping content</div> : null}
           {userState.preferredLodging === 'moar-cabins' ? <div>moar cabins content</div> : null}
