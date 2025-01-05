@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "./AccomodationOption.css";
+
 export interface AccomodationOptionProps {
   id: string;
   label: string;
