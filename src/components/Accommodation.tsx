@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import { UserStateContext, UserDispatchContext } from '../contexts/userContext';
+import { UserStateContext } from '../contexts/userContext';
 
 import ChooseAccomodation from './ChooseAccomodation';
 
@@ -15,6 +15,10 @@ const Accommodation: React.FC = () => {
       <p>Please understand that cabins and guesthouse rooms are in scarce supply. So we will have to prioritize based on people travelling from abroad and/or with children.</p>
       <ChooseAccomodation />
       {userState !== null && userState.preferredLodging === null ? <img src="/sad-drenched.gif" alt="lalli sad you wont be hanging out with us" /> : null}
+      {userState !== null && userState.preferredLodging === 'camping' ? <div>camping content</div> : null}
+      {userState !== null && userState.preferredLodging === 'moar-cabins' ? <div>moar cabins content</div> : null}
+      {userState !== null && userState.preferredLodging === 'moar-room' ? <div>moar room/guesthouse content</div> : null}
+      {userState !== null && userState.preferredLodging === 'other' ? <div>other lodging content</div> : null}
     </section>
   );
 };
