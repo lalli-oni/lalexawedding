@@ -183,6 +183,11 @@ header nav a {
   font-size: 1.2rem;
 }
 
+#sectionCabin, #guesthouse {
+  background: #ff8e58;
+  height: auto;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
@@ -192,6 +197,25 @@ footer {
 
 #accomodation {
   background: #8A9C4A;
+}
+
+/* components/Cabin.css */
+.cabin-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between images as needed */
+  width: 70%;
+  margin: 0 auto; 
+}
+
+.cabin-img {
+  max-width: 100%; /* Ensures images do not exceed container width */
+  height: auto; /* Adjusts height automatically */
+  object-fit: cover; /* Maintains aspect ratio */
+  border-radius: 10px;
+  flex-shrink: 1; /* Prevents images from shrinking too much */
+  flex-grow: 0;
+  min-width: 20px;
 }
 
 /* Css for mobile here */
