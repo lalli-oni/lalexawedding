@@ -7,7 +7,7 @@ export interface UserContextState {
   // Suggestion: special catering requirements
   // Note: Could separate small/large cabins
   // Note: 'other' is fx. guesthouses/airbnb in Akranes
-  preferredLodging?: 'moar-cabins' | 'moar-room' | 'camping' | 'other';
+  preferredLodging?: 'moar-cabins' | 'moar-room' | 'camping' | 'other' | null;
 }
 
 
