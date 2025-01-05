@@ -12,6 +12,7 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import Accommodation from './components/Accommodation';
 import Cabin from './components/Cabin';
+import Guesthouse from './components/Guesthouse';
 
 import './App.css';
 
@@ -41,6 +42,7 @@ const AppContent: React.FC = () => {
             </>
           } />
           <Route path="/cabin" element={<Cabin />} />
+          <Route path="/guesthouseRoom" element={<Guesthouse />} />
         </Routes>
         <Footer />
       </UserProvider>

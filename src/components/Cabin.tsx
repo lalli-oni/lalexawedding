@@ -6,7 +6,7 @@ const Cabin: React.FC = () => {
     <div id="sectionCabin">
       <h1 style={{margin:"0", paddingTop: "30px", textAlign:"center"}}>Cabins in the Cottage</h1>
       <div style={{marginTop:"30px"}}>
-        <div className="cabin-container">
+        <div className="cabin-container" style={{width:"50%"}}>
         <img className="cabin-img" src="/img/cabin.jpeg" alt="Cabin 1"/>
         <img className="cabin-img" src="/img/cabin0.png" alt="Cabin 1"/>
         </div>
