@@ -1,6 +1,6 @@
 // App.tsx
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import UserProvider from './contexts/UserProvider';
 
@@ -26,15 +26,13 @@ const App: React.FC = () => {
 };
 
 const AppContent: React.FC = () => {
-  const location = useLocation();
-
   return (
     <div className="App">
       <UserProvider>
-        {location.pathname === '/' && <Header />}
         <Routes>
           <Route path="/" element={
             <>
+              <Header />
               <Welcome />
               <EventDetails />
               <Accommodation />
