@@ -1,8 +1,8 @@
 import React from 'react';
 
-import "./AccomodationOption.css";
+import "./AccommodationOption.css";
 
-export interface AccomodationOptionProps {
+export interface AccommodationOptionProps {
   id: string;
   label: string;
   iconSvgPath: string;
@@ -10,13 +10,13 @@ export interface AccomodationOptionProps {
   scale?: string;
 }
 
-const AccomodationOption = (props: AccomodationOptionProps) => {
+const AccommodationOption = (props: AccommodationOptionProps) => {
   const { id, label, iconSvgPath, onSelect, scale } = props;
 
   return (
     <label htmlFor={id} style={{ display: "flex", flexDirection: "column", alignItems: 'center' }}>
       <input
-        type="radio" id={id} name="accomodation" style={{ opacity: 0 }}
+        type="radio" id={id} name="accommodation" style={{ opacity: 0 }}
         onChange={(e) => {
           if (e.target.value === 'on') onSelect(id);
         }}
@@ -33,4 +33,4 @@ const AccomodationOption = (props: AccomodationOptionProps) => {
   )
 };
 
-export default AccomodationOption;
+export default AccommodationOption;
