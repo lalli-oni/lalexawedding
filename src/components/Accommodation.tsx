@@ -31,7 +31,8 @@ const Accommodation: React.FC = () => {
           {userState.preferredLodging === 'moar-cabins' ?
             <div>
               <p>Móar has some nice simple cabins available for rent on a discount. WIP: add price. Please be aware, they are in limited supply so we have to prioritize.</p>
-              <p>For more information you can look <Link to="/cabin">here</Link> or visit Móar official site <a href="https://www.traveltomoar.com/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+              <p>There are 2 types available, the smaller cabin you can read more about <Link to="/cabin">here</Link>. And the larger cottage you can read about <Link to="/cottage">here</Link></p>
+              <p>Or you can visit the Móar official website <a href="https://www.traveltomoar.com/" target="_blank" rel="noopener noreferrer">here</a>.</p>
             </div>
           : null}
           {userState.preferredLodging === 'moar-room' ?
