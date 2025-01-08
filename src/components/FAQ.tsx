@@ -1,5 +1,6 @@
-// components/OurStory.tsx
 import React from 'react';
+
+import SpeechBubble from './SpeechBubble';
 
 const FAQ: React.FC = () => {
   return (
@@ -7,15 +8,25 @@ const FAQ: React.FC = () => {
       <h2>FAQ</h2>
       <div id="sectionFAQ" >
       <h3>What is the agenda?</h3>
-      <p>We are working on it and will let you know! But for now we know that there will be a viking ceremony, snacks, drinks, dancing and very informal dinner with hot dogs</p>
+      <SpeechBubble speaker='alexa'
+        text="We are working on it and will let you know! But for now we know that there will be a viking ceremony, snacks, drinks, dancing and very informal dinner with hot dogs"
+      />
       <h3>What is the dress code?</h3>
-      <p>There is no dress code, but we would love to see you in your best festival outfit!</p>
+      <SpeechBubble speaker='lalli'
+        text="There is no dress code, except having to wear some clothes. This isn't a Betazoid wedding. You are welcome to get into the festival vibe."
+      />
       <h3>Can I bring my kids?</h3>
-      <p>We know is difficult for some of you to leave your kids at home, so they are welcome too (they are not so bad). But we also want to have fun with you as much as we can, and not having you been a responsible adult/parent (we are selfish), so it's up to you!</p>
+      <SpeechBubble speaker='lalli'
+        text="Your kids are welcome (no bringing random kids please!). But they also have to be cool!. We don't want to lame naughty kids."
+      />
       <h3>What about gifts?</h3>
-      <p>No gifts. We only ask you to make and record memories with us, and share it with us later!</p>
+      <SpeechBubble speaker='lalli'
+        text="No gifts. We only ask you to make and record memories with us, and share it with us later!"
+      />
       <h3>Who chose these ugly website colors?</h3>
-      <p>We are developers, not designers ok?</p>
+      <SpeechBubble speaker='alexa'
+        text="We are developers, not designers ok?"
+      />
       </div>
     </section>
   );
