@@ -5,15 +5,15 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import UserProvider from './contexts/UserProvider';
 
 import Header from './components/Header';
-import Welcome from './components/Welcome';
-import InterestingToDO from './components/InterestingToDo';
-import EventDetails from './components/EventDetails';
-import FAQ from './components/FAQ';
+import Welcome from './components/sections/Welcome';
+import InterestingToDO from './components/sections/InterestingToDo';
+import EventDetails from './components/sections/EventDetails';
+import FAQ from './components/sections/FAQ';
 import Footer from './components/Footer';
-import Accommodation from './components/Accommodation';
-import Cabin from './components/Cabin';
-import Guesthouse from './components/Guesthouse';
-import Cottage from './components/Cottage';
+import Accommodation from './components/sections/Accommodation';
+import Cabin from './components/pages/Cabin';
+import Guesthouse from './components/pages/Guesthouse';
+import Cottage from './components/pages/Cottage';
 
 import './App.css';
 

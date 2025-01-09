@@ -1,4 +1,3 @@
-// components/EventDetails.tsx
 import React from 'react';
 
 const EventDetails: React.FC = () => {

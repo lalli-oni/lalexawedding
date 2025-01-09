@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
-import { UserStateContext } from '../contexts/userContext';
+import { UserStateContext } from '../../contexts/userContext';
 
-import ChooseAccommodation from './ChooseAccommodation';
+import ChooseAccommodation from '../ChooseAccommodation';
 
 const Accommodation: React.FC = () => {
   const userState = useContext(UserStateContext);

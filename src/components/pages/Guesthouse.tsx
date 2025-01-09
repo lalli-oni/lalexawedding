@@ -1,5 +1,5 @@
 import React from 'react';
-import BookingLink from './BookingLink';
+import BookingLink from '../BookingLink';
 
 const Guesthouse: React.FC = () => {
   return (

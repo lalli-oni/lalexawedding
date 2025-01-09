@@ -1,6 +1,6 @@
 // components/Cabin.tsx
 import React from 'react';
-import BookingLink from './BookingLink';
+import BookingLink from '../BookingLink';
 
 const Cabin: React.FC = () => {
   return (
