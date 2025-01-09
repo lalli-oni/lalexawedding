@@ -4,7 +4,7 @@ import BookingLink from './BookingLink';
 
 const Cottage: React.FC = () => {
   return (
-    <section id="cottage">
+    <section id="sectionCabin">
       <h1 style={{margin:"0", paddingTop: "30px", textAlign:"center"}}>Cottage</h1>
       <div style={{marginTop:"30px"}}>
         <div className="cabin-container">
