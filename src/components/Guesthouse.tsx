@@ -14,7 +14,7 @@ const Guesthouse: React.FC = () => {
             <div id="gridEvent" >
                 <div className="gridEvent-1" style={{textAlign: "center", fontSize:"20px", margin:"0 20px"}}>
                     <h2>1 Room in a Guesthouse</h2>
-                    This guesthouse has 4 rooms with double beds, living room, a shared bathroom and a shared kitche kitchen.
+                    This guesthouse has 4 rooms with double beds, living room, a shared bathroom and a shared kitchen.
                     <br/>
                     The cost is €92 per night
                     <br/>

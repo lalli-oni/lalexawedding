@@ -1,9 +1,10 @@
 import React from 'react';
+
 import BookingLink from './BookingLink';
 
 const Cottage: React.FC = () => {
   return (
-    <section id="guesthouse">
+    <section id="cottage">
       <h1 style={{margin:"0", paddingTop: "30px", textAlign:"center"}}>Cottage</h1>
       <div style={{marginTop:"30px"}}>
         <div className="cabin-container">
@@ -41,7 +42,7 @@ const Cottage: React.FC = () => {
         <div style={{ textAlign: 'center', marginTop: '30px' }}>
             <BookingLink />
         </div>
-        </div>
+      </div>
     </section>
     );
 }
