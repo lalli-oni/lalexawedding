@@ -1,10 +1,40 @@
 // components/Header.tsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
 
 const Header: React.FC = () => {
+  useEffect(() => {
+    const header = document.getElementById('navMenu');
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target.id === 'welcome') {
+              header!.style.backgroundColor = 'transparent';
+            } else {
+              header!.style.backgroundColor = '#479249';
+            }
+          }
+        });
+      },
+      { threshold: 0.2 } // Adjust this value as needed
+    );
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
   return (
-    <header>
+    <header id="navMenu">
       <nav>
         <Link to="welcome" smooth={true} duration={500}>Welcome</Link>
         <Link to="event-details" smooth={true} duration={500}>Event Details</Link>

@@ -6,9 +6,9 @@ const Welcome: React.FC = () => {
     <section id="welcome">
       <div id="wave-container" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
         <h1>Welcome to Alechandrina and Lárus Wedding</h1>
-        <p>We're so excited to celebrate our love with all of you! 
+        <div><p>We're so excited to celebrate our love with all of you! 
           We want to make it a festival where we will share laughters, music, games
-          and unforgettable memories with you. </p>
+          and unforgettable memories with you. </p></div>
       </div>
     </section>
   );
