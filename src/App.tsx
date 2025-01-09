@@ -32,12 +32,12 @@ const AppContent: React.FC = () => {
         <Routes>
           <Route path="/" element={
             <>
-              <Header />
               <Welcome />
               <EventDetails />
               <Accommodation />
               <FAQ />
               <InterestingToDO />
+              <Header />
             </>
           } />
           <Route path="/cabin" element={<Cabin />} />

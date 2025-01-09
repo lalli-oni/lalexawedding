@@ -10,8 +10,9 @@ const InterestingToDO: React.FC = () => {
         <a href="https://www.skagalif.is/is/visit-akranes">Visit Akranes</a><br />
         We recommend the hot pool. Hot pools are mini paradises in Iceland.
 
-        <br /><br />
+        <br /><br /></p>
         <h3>Other places in Iceland</h3>
+        <p>
         We also recommend you to take a few days before or after the wedding to explore the country. Here are a few things we recommend:
         - <a href="https://www.visiticeland.com/article/the-golden-circle">The Golden Circle</a><br />
         - <a href="https://www.visiticeland.com/service-provider/5ec7d096a90548233654dd62">Blue Lagoon</a> or <a href="https://www.skylagoon.com/">Sky Lagoon</a>: turistic places, we now, but they are VERY nice.<br />

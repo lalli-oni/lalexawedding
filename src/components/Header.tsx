@@ -1,6 +1,7 @@
 // components/Header.tsx
 import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
+import { HashLink } from 'react-router-hash-link';
 
 const Header: React.FC = () => {
   useEffect(() => {
@@ -36,10 +37,11 @@ const Header: React.FC = () => {
   return (
     <header id="navMenu">
       <nav>
-        <Link to="welcome" smooth={true} duration={500}>Welcome</Link>
-        <Link to="event-details" smooth={true} duration={500}>Event Details</Link>
-        <Link to="FAQ" smooth={true} duration={500}>FAQ</Link>
-        <Link to="interesting" smooth={true} duration={500}>Interesting things to do</Link>
+        <HashLink smooth to="/#welcome">Welcome</HashLink>
+        <HashLink smooth to="/#event-details">Event Details</HashLink>
+        <HashLink smooth to="/#Accommodation">Accommodation</HashLink>
+        <HashLink smooth to="/#FAQ">FAQ</HashLink>
+        <HashLink smooth to="/#interesting">Interesting things to do</HashLink>
       </nav>
     </header>
   );
