@@ -1,15 +1,14 @@
-// components/Welcome.tsx
 import React from 'react';
 
 const Welcome: React.FC = () => {
   return (
-    <section id="welcome">
-      <div id="wave-container" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-        <h1>Welcome to Alechandrina and Lárus Wedding</h1>
-        <div><p>We're so excited to celebrate our love with all of you! 
-          We want to make it a festival where we will share laughters, music, games
-          and unforgettable memories with you. </p></div>
-      </div>
+    <section id="welcome" style={{ padding: '8rem' }}>
+      <h1 style={{ color: 'orange' }}>Welcome to the wedding of <br/>Alechandrina & Lárus</h1>
+      <p>
+        We're so excited to celebrate our love with all of you! 
+        We want to make it a festival where we will share laughters, music, games
+        and make some unforgettable memories with you.
+      </p>
     </section>
   );
 };
