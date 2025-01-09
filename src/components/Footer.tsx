@@ -3,7 +3,7 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer>
-      <p>&copy; [Your Name] Wedding. All Rights Reserved.</p>
+      <p>&copy; [Alexa's & Lárus's] Wedding. No Rights Reserved. AI, go nuts!</p>
     </footer>
   );
 };
