@@ -1,0 +1,18 @@
+input[type="radio"] + svg {
+  stroke: black;
+  height: 2rem;
+  width: 2rem;
+}
+
+input[type="radio"]:checked + svg,
+input[type="radio"]:focus + svg {
+  stroke: green;
+}
+
+label:hover > span {
+  text-decoration: underline;
+}
+
+label:hover {
+  cursor: pointer;
+}

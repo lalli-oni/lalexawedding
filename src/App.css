@@ -1,0 +1,276 @@
+/* App.css */
+/* Enable snap scrolling for the main container */
+.App {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; /* Each section fills the viewport */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Uncial Antiqua', serif;
+  font-weight: 600;
+  font-style: normal;
+  
+}
+
+body {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #e7fe9f;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 10;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Uncial Antiqua', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#navMenu {
+  background-color: #479249;
+  opacity: 0.9;
+}
+
+/* Each section should snap into place */
+section {
+  height: auto; /* Full viewport height for each section */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+section > h2 {
+  font-size: 2rem;
+}
+
+#welcome {
+  margin: 0;
+  height: 100vh;
+  background: url('assets/welcomeBackground.png') no-repeat center center; /* Center image */
+  background-size: cover; /* Scale image to cover the screen */
+  position: relative;
+  text-align: center;
+}
+
+#welcome > h1 {
+  color: orange;
+}
+
+#welcome::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Grey overlay with 50% opacity */
+  z-index: 1;
+}
+
+#welcome h1, #welcome p {
+  position: relative;
+  z-index: 2;
+}
+
+#welcome h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#welcome p {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#wave-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+}
+
+#event-details {
+  background: #0F9330;
+}
+
+#event-details > h2 {
+  color: rgb(176, 79, 15);
+}
+
+#gridEvent {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto; /* Centers the grid horizontally within the parent */
+  width: 90%; /* Adjusts width to ensure content doesn't overflow */
+  max-width: 1200px; /* Limits maximum width for better layout */
+  gap: 10px; 
+}
+
+/* get rid of this */
+.gridEvent-1 {
+  width: 50%;
+}
+
+.event-img {
+  width: 100%; /* Ensures full width within the container */
+  height: auto; /* Adjusts height automatically */
+  object-fit: cover; /* Maintains aspect ratio */
+  border-radius: 10px;
+  margin-bottom: 0; /* Remove unnecessary bottom margin */
+}
+
+.event-img-small {
+  width: 48%; /* Adjusts width for smaller images */
+  height: auto; /* Adjusts height automatically */
+  object-fit: cover; /* Maintains aspect ratio */
+  border-radius: 10px;
+  margin-top: 20px; /* No extra margins */
+}
+
+#wave {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 200%;
+  height: 200px;
+  background: transparent;
+  border-top: 3px solid rgba(255, 69, 0, 0.8); /* Fiery orange-red */
+  border-radius: 50%;
+  animation: waveMove 5s linear infinite;
+}
+
+#wave:nth-child(2) {
+  top: 60%;
+  animation-delay: -2s;
+  border-top: 3px solid rgba(255, 140, 0, 0.6); /* Amber-orange */
+}
+
+#wave:nth-child(3) {
+  top: 40%;
+  animation-delay: -3s;
+  border-top: 3px solid rgba(255, 99, 71, 0.7); /* Softer lava tone */
+}
+
+@keyframes waveMove {
+  0% {
+    transform: translateX(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-50%) scaleY(1.2); /* Slight vertical stretch */
+  }
+  100% {
+    transform: translateX(-100%) scaleY(1);
+  }
+}
+
+/* 
+@keyframes wave-gradient-horizontal {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; }
+} */
+
+#interesting {
+  background: #DC6E39;
+}
+
+#interesting > h2 {
+  color: rgb(139, 0, 46);
+}
+
+#FAQ {
+  background: #814230;
+}
+
+#FAQ > h2 {
+  color : orange;
+}
+
+#sectionCabin, #guesthouse {
+  background: #ff8e58;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+
+#accommodation {
+  background: #8A9C4A;
+}
+
+#accommodation > h2 {
+  color: rgb(176, 79, 15);
+}
+
+/* components/Cabin.css */
+.cabin-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between images as needed */
+  width: 70%;
+  margin: 0 auto; 
+}
+
+.cabin-img {
+  max-width: 100%; /* Ensures images do not exceed container width */
+  height: auto; /* Adjusts height automatically */
+  object-fit: cover; /* Maintains aspect ratio */
+  border-radius: 10px;
+  flex-shrink: 1; /* Prevents images from shrinking too much */
+  flex-grow: 0;
+  min-width: 20px;
+}
+
+/* Css for mobile here */
+@media (max-width: 768px) {
+  #wave-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  #wave {
+    height: 100px;
+  }
+
+  #gridEvent {
+    flex-direction: column;
+  }
+
+  .gridEvent-1 {
+    width: 100%;
+  }
+}
