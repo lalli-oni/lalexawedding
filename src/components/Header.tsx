@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { HashLink } from 'react-router-hash-link';
 
+const isSection = (visibleSection: string, sectionName: string) => visibleSection === sectionName ? 'activeSection' : undefined;
+
 const Header: React.FC = () => {
   useEffect(() => {
     const header = document.getElementById('navMenu');
@@ -35,13 +37,13 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header id="navMenu">
-      <nav>
-        <HashLink smooth to="/#welcome">Welcome</HashLink>
-        <HashLink smooth to="/#event-details">Event Details</HashLink>
-        <HashLink smooth to="/#Accommodation">Accommodation</HashLink>
-        <HashLink smooth to="/#FAQ">FAQ</HashLink>
-        <HashLink smooth to="/#interesting">Interesting things to do</HashLink>
+    <header>
+      <nav ref={navMenuRef}>
+        <HashLink smooth to="/#welcome" className={isSection(visibleSection, 'welcome')}>Welcome</HashLink>
+        <HashLink smooth to="/#event-details" className={isSection(visibleSection, 'event-details')}>Event Details</HashLink>
+        <HashLink smooth to="/#accommodation" className={isSection(visibleSection, 'accommodation')}>Accommodation</HashLink>
+        <HashLink smooth to="/#FAQ" className={isSection(visibleSection, 'FAQ')}>FAQ</HashLink>
+        <HashLink smooth to="/#interesting" className={isSection(visibleSection, 'interesting')}>Interesting things to do</HashLink>
       </nav>
     </header>
   );

@@ -49,7 +49,12 @@ header nav a {
   font-style: normal;
 }
 
-#navMenu {
+header nav a.activeSection {
+  color: orange;
+  text-decoration: underline;
+}
+
+header {
   background-color: #479249;
   opacity: 0.9;
 }
