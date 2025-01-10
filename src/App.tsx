@@ -1,5 +1,5 @@
 // App.tsx
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import UserProvider from './contexts/UserProvider';
@@ -16,6 +16,7 @@ import Guesthouse from './components/pages/Guesthouse';
 import Cottage from './components/pages/Cottage';
 
 import './App.css';
+import LoadingOverlay from './components/LoadingOverlay';
 
 const App: React.FC = () => {
   return (
@@ -26,8 +27,19 @@ const App: React.FC = () => {
 };
 
 const AppContent: React.FC = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let timeout = setTimeout(() => setLoading(false), 4000);
+
+    return () => {
+      clearTimeout(timeout)
+    }
+  }  , []);
+
   return (
     <div className="App">
+      {loading ? <LoadingOverlay /> : null}
       <UserProvider>
         <Routes>
           <Route path="/" element={

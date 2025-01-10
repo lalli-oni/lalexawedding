@@ -18,7 +18,7 @@ const SpeechBubble = (props: SpeechBubbleProps) => {
       style={{ display: 'flex', flexDirection: speakerPosition === 'right' ? 'row-reverse' : 'row', alignItems: 'center', gap: '2rem' }}
     >
       <Avatar avatar={props.speaker} />
-      <div style={{ position: 'relative', width: '0', left: speakerPosition === 'right' ? '-150px' : '-110px' }}>
+      <div style={{ position: 'relative', width: '0', flexGrow: 0, left: speakerPosition === 'right' ? '-150px' : '-110px' }}>
         <svg
           width="200"
           height="100"
@@ -32,7 +32,7 @@ const SpeechBubble = (props: SpeechBubbleProps) => {
         </svg>
       </div>
       <p
-        style={{ padding: '2rem', margin: '0', backgroundColor: 'white', borderRadius: '5rem', alignSelf: 'flex-start' }}
+        style={{ padding: '2rem', margin: '0', backgroundColor: 'white', borderRadius: '5rem', alignSelf: 'flex-start', flexGrow: 2 }}
       >
         {props.text}
       </p>

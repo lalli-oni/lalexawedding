@@ -1,0 +1,22 @@
+#loading-overlay {
+    animation: fade-out 2s forwards;
+    animation-delay: 2s;
+    color: transparent;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background: green;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
