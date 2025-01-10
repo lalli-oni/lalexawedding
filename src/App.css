@@ -6,22 +6,11 @@
   height: 100vh; /* Each section fills the viewport */
 }
 
-/* Each section should snap into place */
-section {
-  height: auto; /* Full viewport height for each section */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Uncial Antiqua', serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
+  
 }
 
 body {
@@ -65,6 +54,22 @@ header nav a {
   opacity: 0.9;
 }
 
+/* Each section should snap into place */
+section {
+  height: auto; /* Full viewport height for each section */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+section > h2 {
+  font-size: 2rem;
+}
+
 #welcome {
   margin: 0;
   height: 100vh;
@@ -72,6 +77,10 @@ header nav a {
   background-size: cover; /* Scale image to cover the screen */
   position: relative;
   text-align: center;
+}
+
+#welcome > h1 {
+  color: orange;
 }
 
 #welcome::before {
@@ -112,12 +121,10 @@ header nav a {
 
 #event-details {
   background: #0F9330;
-  display: flex; /* Enables flexbox */
-  flex-direction: column; /* Stacks content vertically */
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally */
-  height: 100vh; /* Full viewport height for vertical centering */
-  padding: 20px; /* Optional padding for spacing */
+}
+
+#event-details > h2 {
+  color: rgb(176, 79, 15);
 }
 
 #gridEvent {
@@ -129,6 +136,7 @@ header nav a {
   gap: 10px; 
 }
 
+/* get rid of this */
 .gridEvent-1 {
   width: 50%;
 }
@@ -196,17 +204,16 @@ header nav a {
   background: #DC6E39;
 }
 
+#interesting > h2 {
+  color: rgb(139, 0, 46);
+}
+
 #FAQ {
   background: #814230;
 }
 
-#sectionFAQ {
-  align-items: normal;
-  width: 90%;
-}
-
-#FAQ p {
-  font-size: 1.2rem;
+#FAQ > h2 {
+  color : orange;
 }
 
 #sectionCabin, #guesthouse {
@@ -223,6 +230,10 @@ footer {
 
 #accommodation {
   background: #8A9C4A;
+}
+
+#accommodation > h2 {
+  color: rgb(176, 79, 15);
 }
 
 /* components/Cabin.css */
