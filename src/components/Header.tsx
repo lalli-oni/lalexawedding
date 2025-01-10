@@ -1,19 +1,29 @@
-// components/Header.tsx
-import React, { useEffect } from 'react';
-import { Link } from 'react-scroll';
+import React, { useEffect, useRef, useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
 const isSection = (visibleSection: string, sectionName: string) => visibleSection === sectionName ? 'activeSection' : undefined;
 
 const Header: React.FC = () => {
+  const [visibleSection, setVisibleSection] = useState<string>('');
+  const navMenuRef = useRef<null | HTMLElement>(null);
+
   useEffect(() => {
-    const header = document.getElementById('navMenu');
+    if (visibleSection?.length) {
+      const location = window.location.toString().split('#')[0];
+      window.history.replaceState(null, '', `${location}#${visibleSection}`);
+    }
+  }, [visibleSection]);
+
+  useEffect(() => {
+    const header = document.getElementsByTagName('header')[0];
     const sections = document.querySelectorAll('section');
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            setVisibleSection(entry.target.id);
+
             if (entry.target.id === 'welcome') {
               header!.style.backgroundColor = 'transparent';
             } else {
