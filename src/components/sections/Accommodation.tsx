@@ -45,6 +45,15 @@ const Accommodation: React.FC = () => {
           {userState.preferredLodging === 'other' ?
             <div>
               <p>If you'd like to stay at a hotel, airbnb or anything else relatively close to the venue we wanted to make it easier by compiling a few options for you here.</p>
+              <p>
+                Guesthouses in town
+                <ul>
+                  <li><a href="http://www.teigur-akranes.com/en">Teigur</a></li>
+                  <li><a href="https://www.facebook.com/melurguesthouse/">Melur</a></li>
+                  <li><a href="https://www.zenhotels.com/hotel/iceland/akranes/mid7715534/the_little_guesthouse_by_the_ocean">The Little Guesthouse by the Ocean</a></li>
+                </ul>
+              </p>
+              <p>Borgarnes is another beautiful town, only 30 minutes drive away from the venue. You can find more options there.</p>
             </div>
           : null}
         </div>
