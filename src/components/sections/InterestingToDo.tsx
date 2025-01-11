@@ -14,6 +14,11 @@ const InterestingToDO: React.FC = () => {
         <a href="https://www.skagalif.is/is/visit-akranes">Visit Akranes</a> (translation available upper right corner).<br />
         We highly recommend the hot pools and the municipal swimming pools! Hot pools are mini paradises in Iceland.
       </p>
+      <p>
+        Guðlaug natural pools https://www.facebook.com/Gudlaug.NaturalPool
+        Akranes light house https://www.facebook.com/Akranesviti/
+        Hvammsvík hot springs - http://www.hvammsvik.com/
+      </p>
       <h3>"The city" - Reykjavík</h3>
       <p>
         Downtown is Reykjavík is relatively small but vibrant and full of surprises. Notable list of places to check out:
