@@ -39,7 +39,7 @@ const Accommodation: React.FC = () => {
           {userState.preferredLodging === 'moar-room' ?
             <div>
               <p>Móar also has 4 rooms in their guesthouse. Since they are so few available we will have to prioritize.</p>
-              <p>For more information you can look <Link to="/guesthouse" target="_blank" >here</Link> or visit Móar official site <a href="https://www.traveltomoar.com/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+              <p>For more information you can look <Link to="/guesthouseRoom" target="_blank" >here</Link> or visit Móar official site <a href="https://www.traveltomoar.com/" target="_blank" rel="noopener noreferrer">here</a>.</p>
             </div>
           : null}
           {userState.preferredLodging === 'other' ?
