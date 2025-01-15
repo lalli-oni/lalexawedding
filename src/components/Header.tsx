@@ -17,7 +17,6 @@ const Header: React.FC = () => {
   }, [visibleSection]);
 
   useEffect(() => {
-    const header = document.getElementsByTagName('header')[0];
     const sections = document.querySelectorAll('section');
 
     const observer = new IntersectionObserver(
@@ -25,12 +24,6 @@ const Header: React.FC = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setVisibleSection(entry.target.id);
-
-            if (entry.target.id === 'welcome') {
-              header!.style.backgroundColor = 'transparent';
-            } else {
-              header!.style.backgroundColor = '#479249';
-            }
           }
         });
       },
