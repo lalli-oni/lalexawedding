@@ -6,14 +6,22 @@ import Avatar from './Avatar';
 export interface SpeechBubbleProps {
   speaker: 'lalli' | 'alexa';
   text: string;
+  fullWidth?: boolean;
 }
 
 const SpeechBubble = (props: SpeechBubbleProps) => {
   const speakerPosition = props.speaker === 'lalli' ? 'right' : 'left';
+  const margin = props.fullWidth ? "0" : "14rem";
 
   return (
     <div
-      style={{ margin: speakerPosition === 'right' ? '0 0 0 14rem' : '0 14rem 0 0', display: 'flex', flexDirection: speakerPosition === 'right' ? 'row-reverse' : 'row', alignItems: 'center', gap: '2rem' }}
+      style={{
+        display: 'flex',
+        flexDirection: speakerPosition === 'right' ? 'row-reverse' : 'row',
+        margin: speakerPosition === 'right' ? `0 0 0 ${margin}` : `0 ${margin} 0 0`,
+        alignItems: 'center',
+        gap: '2rem'
+      }}
     >
       <Avatar avatar={props.speaker} />
       <div style={{ position: 'relative', width: '0', flexGrow: 0, left: '-8rem' }}>
