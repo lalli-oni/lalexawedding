@@ -10,6 +10,18 @@ const FAQ: React.FC = () => {
       <h2>FAQ</h2>
       <div style={{ width: '100%' }}>
         <div>
+          <p className="question">How will we get here/there/everywhere?</p>
+          <SpeechBubble speaker='lalli'
+            text="If you are staying at the camping grounds, or at Móar getting to and from the venue just means walking. If you are staying elsewhere we can look into rides, or figure out a taxi. There is no public transport from the city to Móar/venue, if you are here for a few days a rental might be a good idea, reach out to us and we might be able to help strike a deal about discounts."
+          />
+        </div>
+        <div>
+          <p className="question">How will the weather be like?</p>
+          <SpeechBubble speaker='lalli'
+            text="Iceland weather is very unpredictable, every year getting more so! Average heat is 11°C but gets quite a bit colder during the night. It can also be very windy, especially in that area. Hope for the best, prepare for the worst."
+          />
+        </div>
+        <div>
           <p className="question">What is the agenda?</p>
           <SpeechBubble speaker='alexa'
             text="We are working on it and will let you know! But for now we know that there will be a viking ceremony, snacks, drinks, dancing and very informal dinner with hot dogs"
@@ -37,6 +49,9 @@ const FAQ: React.FC = () => {
           <p className="question">Who chose these ugly website colors?</p>
           <SpeechBubble speaker='alexa'
             text="We are developers, not designers ok?"
+          />
+          <SpeechBubble speaker='lalli'
+            text="It was all Alexa! I tried to stop her!"
           />
         </div>
       </div>

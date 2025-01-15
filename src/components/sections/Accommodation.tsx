@@ -22,7 +22,7 @@ const Accommodation: React.FC = () => {
             <div>
               <p>
                 Great! We will have camping areas right outside the venue and at Móar. We will try to ensure you access to toilets, internet and electricity.<br />
-                Additioanlly there is a camping site closeby in Akranes: <a href="https://maps.app.goo.gl/v9wpgsw2cWTcCPkN9">Akranes campsite</a>
+                Additionally there is a camping site closeby in Akranes: <a href="https://maps.app.goo.gl/v9wpgsw2cWTcCPkN9">Akranes campsite</a>
               </p>
               <p>
                 We can recommend <a href="https://www.kukucampers.is/">KUKU Campers</a>. There are also a few other camping sites in the area, like <a href="https://www.campingcard.is/campsite/reykjavik-camping-grindavik/">Reykjavík Camping Grindavík</a> and <a href="https://www.campingcard.is/campsite/reykjavik-camping-vid-voginn">Reykjavík Camping Við Voginn</a>.

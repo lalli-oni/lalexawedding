@@ -1,7 +1,5 @@
 import React from 'react';
 
-// import './SpeechBubble.css';
-
 import Avatar from './Avatar';
 
 
@@ -15,10 +13,10 @@ const SpeechBubble = (props: SpeechBubbleProps) => {
 
   return (
     <div
-      style={{ display: 'flex', flexDirection: speakerPosition === 'right' ? 'row-reverse' : 'row', alignItems: 'center', gap: '2rem' }}
+      style={{ margin: speakerPosition === 'right' ? '0 0 0 14rem' : '0 14rem 0 0', display: 'flex', flexDirection: speakerPosition === 'right' ? 'row-reverse' : 'row', alignItems: 'center', gap: '2rem' }}
     >
       <Avatar avatar={props.speaker} />
-      <div style={{ position: 'relative', width: '0', flexGrow: 0, left: speakerPosition === 'right' ? '-150px' : '-110px' }}>
+      <div style={{ position: 'relative', width: '0', flexGrow: 0, left: speakerPosition === 'right' ? '-7rem' : '-8rem' }}>
         <svg
           width="200"
           height="100"
