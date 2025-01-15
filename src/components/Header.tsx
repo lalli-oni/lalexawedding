@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
+import "./Header.css";
+
 const isSection = (visibleSection: string, sectionName: string) => visibleSection === sectionName ? 'activeSection' : undefined;
 
 const Header: React.FC = () => {

@@ -1,0 +1,25 @@
+header {
+  background-color: #479249;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 10;
+  text-align: center;
+}
+
+header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Uncial Antiqua", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header nav a.activeSection {
+  color: orange;
+  text-decoration: underline;
+}
