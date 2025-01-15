@@ -1,12 +1,18 @@
 header {
-  background-color: #479249;
-  opacity: 0.9;
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1rem;
   z-index: 10;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+header nav {
+  background-color: #479249;
+  opacity: 0.9;
+  padding: 1rem;
+  border-radius: 0 0 2rem 2rem;
 }
 
 header nav a {
