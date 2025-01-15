@@ -1,0 +1,9 @@
+img.avatar {
+    clip-path: circle(65px at 90px 65px);
+    flex-grow: 0;
+    align-self: flex-end;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    top: 4rem;
+}
