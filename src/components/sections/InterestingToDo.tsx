@@ -15,9 +15,11 @@ const InterestingToDO: React.FC = () => {
         We highly recommend the hot pools and the municipal swimming pools! Hot pools are mini paradises in Iceland.
       </p>
       <p>
-        Guðlaug natural pools https://www.facebook.com/Gudlaug.NaturalPool
-        Akranes light house https://www.facebook.com/Akranesviti/
-        Hvammsvík hot springs - http://www.hvammsvik.com/
+        <ul>
+          <li><a href="https://www.facebook.com/Gudlaug.NaturalPool">Guðlaug natural pools</a></li>
+          <li><a href="https://www.facebook.com/Akranesviti/">Akranes light house</a></li>
+          <li><a href="http://www.hvammsvik.com/">Hvammsvík hot springs</a></li>
+        </ul>
       </p>
       <h3>"The city" - Reykjavík</h3>
       <p>
