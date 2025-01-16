@@ -10,7 +10,7 @@ const Avatar = (props: AvatarProps) => {
   return (
       <img
         className="avatar"
-        src={props.avatar === 'lalli' ? "/lalli_profile_splines.svg" : "alexa_avatar.jpg"} alt="lalli avatar"
+        src={`${props.avatar}_avatar.jpg`} alt={`${props.avatar} avatar`}
       />
   );
 };
