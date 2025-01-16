@@ -14,13 +14,11 @@ const InterestingToDO: React.FC = () => {
         <a href="https://www.skagalif.is/is/visit-akranes">Visit Akranes</a> (translation available upper right corner).<br />
         We highly recommend the hot pools and the municipal swimming pools! Hot pools are mini paradises in Iceland.
       </p>
-      <p>
-        <ul>
-          <li><a href="https://www.facebook.com/Gudlaug.NaturalPool">Guðlaug natural pools</a></li>
-          <li><a href="https://www.facebook.com/Akranesviti/">Akranes light house</a></li>
-          <li><a href="http://www.hvammsvik.com/">Hvammsvík hot springs</a></li>
-        </ul>
-      </p>
+      <ul>
+        <li><a href="https://www.facebook.com/Gudlaug.NaturalPool">Guðlaug natural pools</a></li>
+        <li><a href="https://www.facebook.com/Akranesviti/">Akranes light house</a></li>
+        <li><a href="http://www.hvammsvik.com/">Hvammsvík hot springs</a></li>
+      </ul>
       <h3>"The city" - Reykjavík</h3>
       <p>
         Downtown is Reykjavík is relatively small but vibrant and full of surprises. Notable list of places to check out:
@@ -37,7 +35,6 @@ const InterestingToDO: React.FC = () => {
       </p>
       <p>
         The south coast also has a lot of great attractions, great waterfalls, epic black sandy beaches and other epic shit!
-
       </p>
       <p>
         On Reykjanes peninsula (where Keflavik airport is located) there are some interesting things happening, like a series of eruptions over the last few years. I'll try to ask my nationfolk to turn it on.
