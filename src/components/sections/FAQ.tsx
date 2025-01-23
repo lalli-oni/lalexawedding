@@ -36,7 +36,7 @@ const FAQ: React.FC = () => {
         <div>
           <p className="question">Can I bring my kids?</p>
           <SpeechBubble speaker='lalli' fullWidth={true}
-            text="Your kids are welcome (no bringing random kids please!). But they also have to be cool!. We don't want to lame naughty kids."
+            text="Your kids are welcome (no bringing random kids please!). But they also have to be cool!. We don't want no lame, boring or naughty kids."
           />
         </div>
         <div>
