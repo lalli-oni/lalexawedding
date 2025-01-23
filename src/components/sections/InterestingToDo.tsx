@@ -1,4 +1,3 @@
-// components/OurStory.tsx
 import React from 'react';
 
 const InterestingToDO: React.FC = () => {
