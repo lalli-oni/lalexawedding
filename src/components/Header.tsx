@@ -48,7 +48,7 @@ const Header: React.FC = () => {
         <HashLink smooth to="/#event-details" className={isSection(visibleSection, 'event-details')}>Event Details</HashLink>
         <HashLink smooth to="/#accommodation" className={isSection(visibleSection, 'accommodation')}>Accommodation</HashLink>
         <HashLink smooth to="/#FAQ" className={isSection(visibleSection, 'FAQ')}>FAQ</HashLink>
-        <HashLink smooth to="/#interesting" className={isSection(visibleSection, 'interesting')}>Interesting things to do</HashLink>
+        <HashLink smooth to="/#interesting" className={isSection(visibleSection, 'interesting')}>Stuff to do</HashLink>
       </nav>
     </header>
   );
