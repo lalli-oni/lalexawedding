@@ -1,4 +1,3 @@
-// App.tsx
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -30,11 +29,12 @@ const AppContent: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    let timeout = setTimeout(() => setLoading(false), 4000);
-
-    return () => {
-      clearTimeout(timeout)
+    const waitForFonts = async () => {
+      await document.fonts.ready;
+      setLoading(false);
     }
+
+    waitForFonts();
   }  , []);
 
   return (
