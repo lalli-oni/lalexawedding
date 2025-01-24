@@ -7,6 +7,8 @@ const InterestingToDO: React.FC = () => {
       <p>
         Iceland is a beautiful country, with unique landscapes and very interesting history. We highly recommend natural hot pools and the municipal swimming pool (practically every town has at least one!).
       </p>
+      <h3>Car rentals</h3>
+      <p>Blue car rental has provided us with 10% discount if you use the following link: <a href="https://www.bluecarrental.is/?affiliate=Lalexa2025">https://www.bluecarrental.is/?affiliate=Lalexa2025</a>. Please make sure you see the discounted price when selecting the car!</p>
       <h3>Close to the wedding venue</h3>
       <p>
         The wedding will take place in Akranes, a small town, but here are a few things you can do in the area: 
