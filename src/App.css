@@ -49,6 +49,7 @@ section > h2 {
   margin: 0;
   height: 100vh;
   background: url('assets/welcomeBackground.png') no-repeat center center; /* Center image */
+  background-color: green; /* fallback while image loads */
   background-size: cover; /* Scale image to cover the screen */
   position: relative;
   text-align: center;

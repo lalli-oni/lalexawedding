@@ -12,7 +12,7 @@ const FAQ: React.FC = () => {
         <div>
           <p className="question">How will we get here/there/everywhere?</p>
           <SpeechBubble speaker='lalli' fullWidth={true}
-            text="If you are staying at the camping grounds, or at Móar getting to and from the venue just means walking. If you are staying elsewhere we can look into rides, or figure out a taxi. There is no public transport from the city to Móar/venue, if you are here for a few days a rental might be a good idea, reach out to us and we might be able to help strike a deal about discounts."
+            text="If you are staying at the camping grounds, or at Móar getting to and from the venue just means walking. If you are staying elsewhere we can look into rides, or figure out a taxi. There is no public transport from the city to Móar/venue. Check out 'Stuff to do' for car rental discounts!"
           />
         </div>
         <div>
@@ -36,7 +36,7 @@ const FAQ: React.FC = () => {
         <div>
           <p className="question">Can I bring my kids?</p>
           <SpeechBubble speaker='lalli' fullWidth={true}
-            text="Your kids are welcome (no bringing random kids please!). But they also have to be cool!. We don't want to lame naughty kids."
+            text="Your kids are welcome (no bringing random kids please!). But they also have to be cool!. We don't want no lame, boring or naughty kids."
           />
         </div>
         <div>
