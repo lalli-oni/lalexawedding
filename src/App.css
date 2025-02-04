@@ -176,11 +176,11 @@ section > h2 {
   100% { background-position: 0% 0%; }
 } */
 
-#interesting {
+#travel {
   background: #DC6E39;
 }
 
-#interesting > h2 {
+#travel > h2 {
   color: rgb(139, 0, 46);
 }
 
