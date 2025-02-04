@@ -1,9 +1,9 @@
 import React from 'react';
 
-const InterestingToDO: React.FC = () => {
+const Travel: React.FC = () => {
   return (
-    <section id="interesting">
-      <h2>Things to do in Iceland</h2>
+    <section id="travel">
+      <h2>Traveling in Iceland</h2>
       <p>
         Iceland is a beautiful country, with unique landscapes and very interesting history. We highly recommend natural hot pools and the municipal swimming pool (practically every town has at least one!).
       </p>
@@ -48,4 +48,4 @@ const InterestingToDO: React.FC = () => {
   );
 };
 
-export default InterestingToDO;
+export default Travel;

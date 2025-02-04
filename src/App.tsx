@@ -5,7 +5,7 @@ import UserProvider from './contexts/UserProvider';
 
 import Header from './components/Header';
 import Welcome from './components/sections/Welcome';
-import InterestingToDO from './components/sections/InterestingToDo';
+import Travel from './components/sections/Travel';
 import EventDetails from './components/sections/EventDetails';
 import FAQ from './components/sections/FAQ';
 import Footer from './components/Footer';
@@ -48,7 +48,7 @@ const AppContent: React.FC = () => {
               <EventDetails />
               <Accommodation />
               <FAQ />
-              <InterestingToDO />
+              <Travel />
               <Header />
             </>
           } />
