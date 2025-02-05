@@ -192,11 +192,6 @@ section > h2 {
   color : orange;
 }
 
-#sectionCabin, #guesthouse {
-  background: #ff8e58;
-  height: auto;
-}
-
 footer {
   text-align: center;
   padding: 1rem;
