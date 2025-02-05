@@ -1,9 +1,10 @@
 import React from 'react';
 import BookingLink from '../BookingLink';
+import Page from './Page';
 
 const Guesthouse: React.FC = () => {
   return (
-    <div id="guesthouse">
+    <Page rotateHue="-78">
       <h1 style={{ margin: "0", paddingTop: "30px", textAlign: "center" }}>Guesthouse</h1>
       <div style={{ marginTop: "30px" }}>
         <div className="cabin-container">
@@ -50,7 +51,7 @@ const Guesthouse: React.FC = () => {
           <BookingLink />
         </div>
       </div>
-    </div>
+    </Page>
   );
 }
 

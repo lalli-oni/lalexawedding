@@ -1,15 +1,16 @@
-// components/Cabin.tsx
 import React from 'react';
+
+import Page from './Page';
 import BookingLink from '../BookingLink';
 
 const Cabin: React.FC = () => {
   return (
-    <div id="sectionCabin">
+    <Page rotateHue="-78">
       <h1 style={{margin:"0", paddingTop: "30px", textAlign:"center"}}>Cabins in the Cottage</h1>
       <div style={{marginTop:"30px"}}>
         <div className="cabin-container" style={{width:"50%"}}>
-        <img className="cabin-img" src="/img/cabin.jpeg" alt="Cabin 1"/>
-        <img className="cabin-img" src="/img/cabin0.png" alt="Cabin 1"/>
+          <img className="cabin-img" src="/img/cabin.jpeg" alt="Cabin 1"/>
+          <img className="cabin-img" src="/img/cabin0.png" alt="Cabin 1"/>
         </div>
       </div>
       <div style={{padding:"50px 0"}}>
@@ -25,14 +26,14 @@ const Cabin: React.FC = () => {
             Let us know if you want to book it!
             </div>
             <div
-            className="gridEvent-1"
-            style={{
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                height: '100%', // Ensures it respects the grid height
-                alignItems: 'center',
-            }}
+              className="gridEvent-1"
+              style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between',
+                  height: '100%', // Ensures it respects the grid height
+                  alignItems: 'center',
+              }}
             >
             <img src="/img/cabin2.png" alt="Event Location 1" className="event-img" />
             <div style={{ display: 'flex', justifyContent: 'space-between', width:'100%', gap: '10px' }}>
@@ -45,7 +46,7 @@ const Cabin: React.FC = () => {
             <BookingLink />
         </div>
       </div>
-    </div>
+    </Page>
   );
 };
 
