@@ -176,11 +176,11 @@ section > h2 {
   100% { background-position: 0% 0%; }
 } */
 
-#interesting {
+#travel {
   background: #DC6E39;
 }
 
-#interesting > h2 {
+#travel > h2 {
   color: rgb(139, 0, 46);
 }
 
@@ -190,11 +190,6 @@ section > h2 {
 
 #FAQ > h2 {
   color : orange;
-}
-
-#sectionCabin, #guesthouse {
-  background: #ff8e58;
-  height: auto;
 }
 
 footer {

@@ -5,11 +5,13 @@ import UserProvider from './contexts/UserProvider';
 
 import Header from './components/Header';
 import Welcome from './components/sections/Welcome';
-import InterestingToDO from './components/sections/InterestingToDo';
+import TravelSection from './components/sections/Travel';
 import EventDetails from './components/sections/EventDetails';
 import FAQ from './components/sections/FAQ';
 import Footer from './components/Footer';
 import Accommodation from './components/sections/Accommodation';
+
+import TravelPage from './components/pages/Travel';
 import Cabin from './components/pages/Cabin';
 import Guesthouse from './components/pages/Guesthouse';
 import Cottage from './components/pages/Cottage';
@@ -48,13 +50,14 @@ const AppContent: React.FC = () => {
               <EventDetails />
               <Accommodation />
               <FAQ />
-              <InterestingToDO />
+              <TravelSection />
               <Header />
             </>
           } />
           <Route path="/cabin" element={<Cabin />} />
           <Route path="/guesthouseRoom" element={<Guesthouse />} />
           <Route path="/cottage" element={<Cottage />} />
+          <Route path="/travel" element={<TravelPage />} />
         </Routes>
         <Footer />
       </UserProvider>

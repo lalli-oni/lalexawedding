@@ -1,14 +1,30 @@
 import React from 'react';
 
-const InterestingToDO: React.FC = () => {
+import Page from './Page';
+
+const Travel: React.FC = () => {
   return (
-    <section id="interesting">
-      <h2>Things to do in Iceland</h2>
+    <Page>
+      <h1>Travelling to Iceland</h1>
+      <h3>Flights</h3>
       <p>
-        Iceland is a beautiful country, with unique landscapes and very interesting history. We highly recommend natural hot pools and the municipal swimming pool (practically every town has at least one!).
+        NB: The main international airport is in Keflavík, a town circa 40 min. drive from "the city" (Reykjavík).
       </p>
-      <h3>Car rentals</h3>
-      <p>Blue car rental has provided us with 10% discount if you use the following link: <a href="https://www.bluecarrental.is/?affiliate=Lalexa2025">https://www.bluecarrental.is/?affiliate=Lalexa2025</a>. Please make sure you see the discounted price when selecting the car!</p>
+      <p>
+        There are a lot of airlines to choose from but Iceland has 2 airlines that operate a lot of routes.
+        Play is a quirky budget airline, to be honest I have no issues with them.
+        Icelandair is the older airline, a bit higher standards but honestly not a huge difference.
+        Personally I'd say this is a luxury problem, you can choose to dish out a few more bucks for Icelandair but Play is a perfectly reasonable choice.
+      </p>
+      <h3>Getting around</h3>
+      <p>
+        Unless you are spending more than a couple of days in the country or don't intend to stay somewhere with good public transport connections (no trains in Iceland!) then we recommend renting a car.
+        We have a discount code from Blue Car rental: <a href="https://www.bluecarrental.is/book/cars/?affiliate=Lalexa2025">Lalexa2025</a>. Make sure the discount is shown when selecting a car!
+      </p>
+      <p>
+        There are buses operating to/from the airport. But if you could use a ride you can tell us when you are arriving/departing and we can see if we can arrange a ride.
+        We will be busy but excited to hang out with you as much as possible 💖!
+      </p>
       <h3>Close to the wedding venue</h3>
       <p>
         The wedding will take place in Akranes, a small town, but here are a few things you can do in the area: 
@@ -44,8 +60,8 @@ const InterestingToDO: React.FC = () => {
       <p>
         See here for other things to do in Iceland: <a href="https://www.visiticeland.com/">Visit Iceland</a> 
       </p>
-    </section>
+    </Page>
   );
 };
 
-export default InterestingToDO;
+export default Travel;
